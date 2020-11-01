@@ -33,8 +33,13 @@ form.addEventListener('submit',(e)=>{
     else{
         displaySuccess(secondPassword);
     }
-    let test = checkPassword(firstPasswordValue,secondPasswordValue);
-    console.log(test);
+    
+    if(checkEmail(emailValue)==false){
+        displayError(email,'Email cant be blank');
+    }
+    else{
+        displaySuccess(email);
+    }
 
     
 })
@@ -74,6 +79,15 @@ function checkPassword(password1,password2){
 
  }
 
+
+ function checkEmail(email){
+     if(email==""){
+         return false;
+     }
+     else{
+         return true;
+     }
+ }
 
 
 function displayError(input,message){
