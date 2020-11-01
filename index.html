@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+    <title>Register</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div id="header-div">
+            <h2>Create Account</h2>
+        </div>
+        <div class="form-div">
+            <form id="form" action="">
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input id="username" type="text" placeholder="Username">
+                    <i class="fa fa-exclamation"></i>
+
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <i class="fa fa-exclamation"></i>
+                    <input id="email" type="email" placeholder="Email Address">
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input id="first-password"type="password" placeholder="Password">
+                    <i class="fa fa-exclamation"></i>
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-control">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input id="second-password" type="password" placeholder="Password">
+                    <i class="fa fa-exclamation"></i>
+                    <small class="error-message"></small>   
+                </div>
+    
+                <button class="submit-button">Sign Up</button>
+            </form>
+
+        </div>
+        
+
+    </div>
+    <script src="app.js"></script> 
+</body>
+</html>
